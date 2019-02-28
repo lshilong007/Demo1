@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" th:src="@{/jquery-3.3.1.js}"></script>
+</head>
+<body>
+    <form action="update" method="post">
+            <input type="hidden" name="uuid" th:value="${q[0].uuid}">
+            用户名:<input type="text" name="uname" th:value="${q[0].uname }">
+            密码:<input type="text" name="pwd" th:value="${q[0].pwd }">
+            <input type="submit" value="修改">
+    </form>
+</body>
+</html>
