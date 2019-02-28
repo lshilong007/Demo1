@@ -19,6 +19,7 @@ public class MusicController {
     public String query(Model model){
         List<Music> list =ms.query();
         model.addAttribute("list",list);
+        System.out.println("MusicController.query");
         return "music";
     }
 }
